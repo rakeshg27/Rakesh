@@ -5,3 +5,72 @@ https://community.cloud.databricks.com/?o=4045616047254302#notebook/239933752427
 
 https://meet.google.com/qnf-rkna-jtz
 
+
+1. Why Spark is Faster Than Hadoop? Hadoop Vs spark
+2. Which language to choose and Why? Scala vs Python
+3. Explain about the Apache Spark Architecture
+4. What do you understand by Spark Execution Model
+5. Brief about spark internals, Spark Session vs Spark Context
+6. Spark Driver vs Spark Executor
+7. Executor vs Executor core
+8. Yarn client mode vs cluster mode
+9. What is RDD and what do you understand by partitions?
+10. What do you understand by Fault tolerance in Spark?
+11. Spark vs Yarn Fault tolerance
+12. Why Lazy evaluation is important in Spark?
+13. Transformations vs actions
+14. Map vs FlatMap
+15. Spark Map vs Map Partition
+16. Wide vs Narrow transformations
+17. Reduce by key vs Group by key
+18. What do you understand by Spark Lineage
+19. Spark Lineage vs Spark DAG
+20. Spark cache vs Spark persist
+21. What do you understand by AggregateByKey and CombineByKey?
+22. Briefly explain about Spark Accumulator
+23. What do you mean by Broadcast variables?
+24. Spark UDF functions, Why one should avoid UDF?
+25. Why one should avoid RDDs, what is the alternative?
+26. What are the benefits of a data frame?
+27. What do you understand by Vectorized UDF?
+28. Which one is better and when you should use, RDDs, Dataframe and Datasets?
+29. Why Spark Dataset is typesafe?
+30. Explain about Repartition and Coalesce.
+31. How to read JSON from Spark?
+32. Explain about Spark WIndow functions and it’s usage.
+33. Spark Rank vs Dense Rank
+34. Partitions vs Bucketing
+35. Explain about catalyst optimizer
+36. Stateless vs Stateful transformations
+37. StructType and StructField
+38. Explain about Apache parquet
+39. What do you understand by CBO, Spark Cost Based Optimizer?
+40. Explain Broadcast variable and shared variable with examples
+41. Have you ever worked on Spark performance tuning and executor tuning
+42. Explain Spark Join without shuffle
+43. Explain about Paired RDD
+44. Cache vs Persist in Spark UI
+45. Why one should avoid groupBy?
+46. How to decide the number of partitions in a data frame?
+47. What is DAG? Explain in details.
+48. Persistence vs Broadcast in Spark
+49. Partition pruning and predicate pushdown
+50. Fold vs reduce in Spark
+51. Explain the interlinking of Pyspark and Apache Arrow
+52. Explain about bucketing in Spark SQL
+53. Explain dynamic resource allocation in Spark
+54. Why fold-left and fold-right are not supported in Spark?
+55. How to decide the number of executors and memory for any spark job?
+56. Different types of cluster managers in spark
+57. Can you explain how to minimize data transfers while working with Spark?
+58. What are the different levels of persistence in Spark?
+59. What is the function of filer()?
+60. Define Partitions in Apache Spark?
+61. What is the difference between reducing () and take() function?
+62. Define YARN in Spark?
+63. Can we trigger automated clean-ups in Spark?
+64. What is another method than “Spark.cleaner.ttl” to trigger automated clean-ups in Spark?
+65. What is the role of Akka in Spark?
+66. Define SchemaRDD in Apache Spark RDD
+67. What is a Spark Driver?
+
