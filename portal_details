@@ -4,6 +4,40 @@ https://fractal.wd1.myworkdayjobs.com/Careers/job/Bengaluru/Azure-Data-Engineer_
 https://www.hackerearth.com/azure-data-engineer-test-maha
 
 
+WITH battle_results AS (
+    SELECT 
+        b.battle_number,
+        b.region,
+        CASE 
+            WHEN b.attacker_outcome = 'win' THEN k_attacker.house
+            ELSE k_defender.house
+        END AS winning_house
+    FROM 
+        battle b
+    JOIN 
+        king k_attacker ON b.attacker_king = k_attacker.kno
+    JOIN 
+        king k_defender ON b.defender_king = k_defender.kno
+)
+SELECT 
+    region,
+    winning_house AS house,
+    COUNT(*) AS wins
+FROM 
+    battle_results
+GROUP BY 
+    region, winning_house
+ORDER BY 
+    region, house;
+
+
+
+
+
+
+
+
+
 
 https://assess.wecreateproblems.com/tests/a4e019ed-e661-4cca-991e-bd12e6b7aea1/instructions
 
