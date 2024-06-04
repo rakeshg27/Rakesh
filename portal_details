@@ -5,6 +5,9 @@ https://www.hackerearth.com/azure-data-engineer-test-maha
 https://www.youtube.com/@cleverstudies/playlists --Data Engineer 
 https://www.youtube.com/playlist?list=PLCLE6UVwCOi1r-LnSDyM-efVK9NpWQMEt  --pyspark by Naresh
 https://www.youtube.com/watch?v=_wJ_8E6VumU&list=PLz-qytj7eIWXTqncmCCSOw-GcBu2c4K0j&ab_channel=DataScienceBasics  --Databrickss in 30 Days
+https://www.youtube.com/@rajasdataengineering7585/playlists  -- Raja Data Engineering [ databricks pyspark mostly coding explain]
+
+
 
 WITH battle_results AS (
     SELECT 
