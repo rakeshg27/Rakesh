@@ -11,6 +11,14 @@ https://acnrecruitment.accenture.com/interview/#/home/eyJsdCI6ICJUa246OTdhZTBiMz
 
 https://acnrecruitment.accenture.com/interview/#/home/eyJsdCI6ICJUa246OTdhZTBiMzYtZjMyMC00ZWUzLWFkNTktMGIzYTBhMTdkNjEyIn0=
 
+
+val mylist=List(("ProductA","CategoryX","2023-09-01",100.0),
+("ProductA","CategoryX","2023-09-02",120.0)
+("ProductA","CategoryX","2023-09-03",130.0)
+("ProductB","CategoryY","2023-09-01",200.0)
+("ProductB","CategoryY","2023-09-02",210.0))
+
+
 WITH battle_results AS (
     SELECT 
         b.battle_number,
