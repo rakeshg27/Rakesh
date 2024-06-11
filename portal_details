@@ -12,6 +12,11 @@ https://acnrecruitment.accenture.com/interview/#/home/eyJsdCI6ICJUa246OTdhZTBiMz
 https://acnrecruitment.accenture.com/interview/#/home/eyJsdCI6ICJUa246OTdhZTBiMzYtZjMyMC00ZWUzLWFkNTktMGIzYTBhMTdkNjEyIn0=
 https://accenture.wd3.myworkdayjobs.com/AccentureCareers/login?Job_Application_ID=8d50a394d8cd900b01e0e3000ab00000
 https://accenture.wd3.myworkdayjobs.com/AccentureCareers/userHome/
+https://doccollectionpartner4001.accenture.com/
+
+
+
+
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 from pyspark.sql.functions import col, when, count, initcap
