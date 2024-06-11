@@ -12,6 +12,62 @@ https://acnrecruitment.accenture.com/interview/#/home/eyJsdCI6ICJUa246OTdhZTBiMz
 https://acnrecruitment.accenture.com/interview/#/home/eyJsdCI6ICJUa246OTdhZTBiMzYtZjMyMC00ZWUzLWFkNTktMGIzYTBhMTdkNjEyIn0=
 https://accenture.wd3.myworkdayjobs.com/AccentureCareers/login?Job_Application_ID=8d50a394d8cd900b01e0e3000ab00000
 https://accenture.wd3.myworkdayjobs.com/AccentureCareers/userHome/
+from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType
+from pyspark.sql.functions import col, when, count, initcap
+
+spark = SparkSession.builder \
+    .appName("Spark-program") \
+    .master("local[*]") \
+    .getOrCreate()
+
+# schema = "id Int,Name String,Age Int,Salary Int, city String"
+
+schema = StructType([
+    StructField("id", IntegerType()),
+    StructField("Name", StringType()),
+    StructField("Age", IntegerType()),
+    StructField("Salary", IntegerType()),
+    StructField("city", StringType()),
+
+])
+
+df = spark.read \
+    .format("csv") \
+    .option("header", True) \
+    .schema(schema) \
+    .option("mode", "FAILFAST") \
+    .option("path", "C:/Users/Karthik Kondpak/Documents/info.csv") \
+    .load()
+
+# orderData = spark.createDataFrame([
+#     ("Order1", "John", 100),
+#     ("Order2", "Alice", 200),
+#     ("Order3", "Bob", 150),
+#     ("Order4", "Alice", 300),
+#     ("Order5", "Bob", 250),
+#     ("Order6", "John", 400)
+# ], ["OrderID", "Customer", "Amount"])
+
+# df.select(col("id"), col("Name"), when((col("Age") > 30) and col("Name").startswith("A"), "JUNIORS").otherwise("Seniors").alias("details")).show()
+
+df.select(
+    col("id"),
+    initcap(col("Name")),
+    col("Age"),
+
+).show()
+
+# &---bitwise -1010010
+# and--logical
+
+
+df.groupby("city").agg(count(col("Name"))).show()
+
+# df.show()
+
+df.printSchema()
+
 
 
 val mylist=List(("ProductA","CategoryX","2023-09-01",100.0),
