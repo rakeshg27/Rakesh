@@ -27,3 +27,16 @@ df = spark.createDataFrame(orderData, schema)
 
 df.show()
 
+
+
+mylist=[(
+ ("Alice", "Math", 80),
+ ("Bob", "Math", 90),
+ ("Alice", "Science", 70),
+ ("Bob", "Science", 85),
+ ("Alice", "English", 75),
+ ("Bob", "English", 95)
+)]
+
+
+
