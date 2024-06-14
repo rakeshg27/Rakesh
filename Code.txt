@@ -1,0 +1,29 @@
+
+from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType
+
+spark = SparkSession.builder \
+    .appName("Spark-program") \
+    .master("local[*]") \
+    .getOrCreate()
+
+orderData = [
+    ("Order1", "John", 100),
+    ("Order2", "Alice", 200),
+    ("Order3", "Bob", 150),
+    ("Order4", "Alice", 300),
+    ("Order5", "Bob", 250),
+    ("Order6", "John", 400)
+]
+
+
+schema = StructType([
+    StructField("OrderID", StringType(), True),
+    StructField("Customer", StringType(), True),
+    StructField("Amount", IntegerType(), True),  # Added True for nullability
+])
+
+df = spark.createDataFrame(orderData, schema)
+
+df.show()
+
