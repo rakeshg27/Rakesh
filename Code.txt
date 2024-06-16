@@ -29,6 +29,17 @@ df.show()
 
 
 
+
+[16/06, 7:04 pm] +91 99894 54737: val df = List(("2023-10-07", "2023-10-10")).toDF("date1", "date2")
+[16/06, 7:05 pm] +91 99894 54737: : Calculate the number of days between two dates
+[16/06, 7:05 pm] +91 99894 54737: Given a DataFrame with date1 and date2 columns, handle missing date values
+by filling them with default dates.
+[16/06, 7:05 pm] +91 99894 54737: val df = List(("2023-10-07", null), (null, "2023-10-08")).toDF("date1", "date2")
+
+
+
+
+
 mylist=[(
  ("Alice", "Math", 80),
  ("Bob", "Math", 90),
