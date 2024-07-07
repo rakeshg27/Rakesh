@@ -1,2 +1,16 @@
 
+https://www.youtube.com/watch?v=PHsC_t0j1dU&ab_channel=freeCodeCamp.org -- Data Engineering 
+⭐️ Contents ⭐️
+⌨️ (0:00:00) Introduction
+⌨️ (0:00:36) Why Data Engineering
+⌨️ (0:03:14) Docker
+⌨️ (0:30:38) SQL
+⌨️ (1:04:32) Building a Data Pipeline from Scratch
+⌨️ (1:31:03) dbt
+⌨️ (2:04:11) CRON Job
+⌨️ (2:07:54) Airflow
+⌨️ (2:41:14) Airbyte
+⌨️ (3:01:54) Outro
+
+
 https://portal.azure.com/#home  --Azure Portal 
